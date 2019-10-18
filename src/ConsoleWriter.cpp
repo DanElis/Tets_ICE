@@ -20,7 +20,10 @@ float ConsoleWriter::readTAmbient() {
     inputParameters.T_ambient = T_ambient;
 }
 
-ConsoleWriter::~ConsoleWriter() = default;
+ConsoleWriter::~ConsoleWriter() {
+    delete testStandICE;
+    delete ICE;
+}
 
 ConsoleWriter::ConsoleWriter() {
     inputParameters = defaultInputParameters;
