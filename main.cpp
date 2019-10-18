@@ -9,5 +9,6 @@ int main() {
     consoleWriter->readTAmbient();
     consoleWriter->runTest();
     consoleWriter->writeTime();
+    delete consoleWriter;
     return 0;
 }
